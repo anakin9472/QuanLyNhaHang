@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E428F32-28C9-482E-B301-9EA295935A3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyNhaHang</RootNamespace>
+    <AssemblyName>QuanLyNhaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\CheckInOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\CheckInOutForm.Designer.cs">
+      <DependentUpon>CheckInOutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\DetailEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\DetailEmployeeForm.Designer.cs">
+      <DependentUpon>DetailEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\ManageEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\ManageEmployeeForm.Designer.cs">
+      <DependentUpon>ManageEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\ChamCongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\ChamCongForm.Designer.cs">
+      <DependentUpon>ChamCongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Ca\SpilitShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Ca\SpilitShiftForm.Designer.cs">
+      <DependentUpon>SpilitShiftForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Ca\ManageShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Ca\ManageShiftForm.Designer.cs">
+      <DependentUpon>ManageShiftForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Period.cs" />
+    <Compile Include="Class\Role.cs" />
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\CheckFoodService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\CheckFoodService.Designer.cs">
+      <DependentUpon>CheckFoodService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Customer.cs" />
+    <Compile Include="Class\Food.cs" />
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\NetWorth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\NetWorth.Designer.cs">
+      <DependentUpon>NetWorth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\ListBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\ListBills.Designer.cs">
+      <DependentUpon>ListBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\THÔNG TIN KHÁCH HÀNG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\THÔNG TIN KHÁCH HÀNG.Designer.cs">
+      <DependentUpon>THÔNG TIN KHÁCH HÀNG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\BẮT ĐẦU\BeginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\BẮT ĐẦU\BeginForm.Designer.cs">
+      <DependentUpon>BeginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\CHỌN MÓN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\CHỌN MÓN.Designer.cs">
+      <DependentUpon>CHỌN MÓN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Bill.cs" />
+    <Compile Include="Class\BillConnect.cs" />
+    <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\Menu.cs" />
+    <Compile Include="Class\MenuConnect.cs" />
+    <Compile Include="TẤT CẢ FORM\KHÁCH\CustomerMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\CustomerMainForm.Designer.cs">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Payment.cs" />
+    <Compile Include="Class\PaymentConnect.cs" />
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\FoodManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\FoodManagement.Designer.cs">
+      <DependentUpon>FoodManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\Nhân viên\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Global.cs" />
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\MY_DB.cs" />
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\MainForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TẤT CẢ FORM\KHÁCH\ĐẶT BÀN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\KHÁCH\ĐẶT BÀN.Designer.cs">
+      <DependentUpon>ĐẶT BÀN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\Login\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\Login\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\TableFoodManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\TableFoodManagement.Designer.cs">
+      <DependentUpon>TableFoodManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Table.cs" />
+    <Compile Include="Class\TableConnect.cs" />
+    <Compile Include="Class\Works.cs" />
+    <Compile Include="Class\Wage.cs" />
+    <EmbeddedResource Include="TẤT CẢ FORM\Nhân viên\CheckInOutForm.resx">
+      <DependentUpon>CheckInOutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\Nhân viên\ManageEmployeeForm.resx">
+      <DependentUpon>ManageEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\Ca\ManageShiftForm.resx">
+      <DependentUpon>ManageShiftForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\Ca\SpilitShiftForm.resx">
+      <DependentUpon>SpilitShiftForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\CheckFoodService.resx">
+      <DependentUpon>CheckFoodService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\NetWorth.resx">
+      <DependentUpon>NetWorth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\KHÁCH\THÔNG TIN KHÁCH HÀNG.resx">
+      <DependentUpon>THÔNG TIN KHÁCH HÀNG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\BẮT ĐẦU\BeginForm.resx">
+      <DependentUpon>BeginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\KHÁCH\CHỌN MÓN.resx">
+      <DependentUpon>CHỌN MÓN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\KHÁCH\CustomerMainForm.resx">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\FoodManagement.resx">
+      <DependentUpon>FoodManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\Nhân viên\ChamCongForm.resx">
+      <DependentUpon>ChamCongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\Nhân viên\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\Login\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\MainForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\KHÁCH\ĐẶT BÀN.resx">
+      <DependentUpon>ĐẶT BÀN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\ListBills.resx">
+      <DependentUpon>ListBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TẤT CẢ FORM\NHÀ HÀNG\QUẢN LÝ BÀN - KHÁCH - MÓN\TableFoodManagement.resx">
+      <DependentUpon>TableFoodManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85e8bad38c9d460da632b93bcb02e0ce %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768e88e5b86836d9d1db4aaf280660e7 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J6Pqp8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eqhLZm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J6Pqp81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85e8bad38c9d460da632b93bcb02e0ce %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3cfbb068c207e7e2731.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
